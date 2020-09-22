@@ -4,7 +4,10 @@ import ReactDOM from 'react-dom';
 class App extends React.Component{
   render(){
     return(
-      <div></div>
+      <div className="container">
+        <h1 className="title">React Movie Search</h1>
+        <searchmovies/>
+      </div>
     )
   }
 }
