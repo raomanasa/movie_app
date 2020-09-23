@@ -3,6 +3,7 @@ import React from "react";
 export default function SearchMovies(){
   const searchmovies = async (e) => {
     e.preventDefault();
+    console.log("submitting");
 
     const query = "Jurassic Park";
 
@@ -19,7 +20,7 @@ export default function SearchMovies(){
     }
 
     return (
-        <form className="form">
+        <form className="form"onSubmit={searchmovies}>
             <label className="label" htmlFor="query">Movie Name</label>
             <input className="input" type="text" name="query"
                 placeholder="i.e. Jurassic Park"/>
